@@ -3,57 +3,49 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+li {
+  list-style: none;
+}
 
 /* header */
 .head-wrapper a {
   text-decoration: none;
   color: #ffffff;
 }
-
 .head-wrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #121212;
   font-size: 14px;
   text-transform: uppercase;
   display: flex;
-  flex-direction: row;
   align-items: center;
-
-
+  justify-content: space-evenly;
 }
-/* nav{
-  display: flex;
-} */
-/* .head-wrapper-a-img{
-
-
-} */
 
 .head-wrapper-ul-num-one {
   width: 20vw;
   height: 64px;
   padding: 0px;
-  
-  flex-direction: row;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: flex-start;
+}
+.head-wrapper-ul-num-one li {
+  margin: 0 5%;
 }
 .head-wrapper-ul-num-two {
   width: 40vw;
   height: 64px;
-  
-  flex-direction: row;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-/* .carrito {
-
-} */
-li {
-  height: 64px;
-  list-style: none;
+.head-wrapper-ul-num-two li {
+  margin: 0 5%;
+}
+.carrito {
+  align-items: end;
 }
 
 .head-wrapper-logoimg {
@@ -63,9 +55,8 @@ li {
 
 /* imagen principal*/
 .imagen-principal-wrapper {
-  width: 100vw;
+  width: 100%;
   height: 659px;
-
 }
 .imagen-principal-wrapper button {
   width: 278px;
@@ -81,7 +72,6 @@ li {
   cursor: pointer;
 }
 .imagen-principal-wrapper h3 {
-
   color: #ffffff;
   font-size: 40px;
 }
@@ -96,27 +86,19 @@ li {
   width: 100%;
 
   min-height: 700px;
-
 }
 
 .prod-popular-wrapper-pant {
   width: 200px;
-
 }
 .prod-popular-wrapper-remera {
- 
   width: 200px;
-
 }
 .prod-popular-wrapper-campera {
-
   width: 200px;
-
 }
 .prod-popular-wrapper-buzo {
-
   width: 200px;
-
 }
 /* .alinear-texto {
 
@@ -134,7 +116,6 @@ li {
   background-color: transparent;
   color: black;
   cursor: pointer;
-
 }
 /* oferta verano*/
 
@@ -142,12 +123,10 @@ li {
   background-color: #121212;
   width: 100%;
   height: 670px;
-
 }
 .oferta-verano-img {
   width: 1274px;
   height: 552px;
-
 }
 .oferta-verano-btn {
   width: 278px;
@@ -176,7 +155,6 @@ li {
 
   font-size: 14px;
   text-transform: uppercase;
-
 }
 /* .footer-wrapper-pol {
 
@@ -209,7 +187,7 @@ li {
 /* quienes somos */
 .about-us-wrapper {
   width: 100%;
-  
+
   height: 80vh;
 }
 /* .about-us-wrapper h1 {
