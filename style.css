@@ -11,62 +11,65 @@
 }
 
 .head-wrapper {
-  width: 100%;
-  height: 64px;
+  width: 100vw;
+  height: auto;
   background-color: #121212;
-  position: relative;
   font-size: 14px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
 }
+/* nav{
+  display: flex;
+} */
+/* .head-wrapper-a-img{
+
+
+} */
 
 .head-wrapper-ul-num-one {
   width: 20vw;
   height: 64px;
   padding: 0px;
-  position: absolute;
-  top: 28px;
-  left: 250px;
+  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .head-wrapper-ul-num-two {
   width: 40vw;
   height: 64px;
-  padding: 0;
-  position: absolute;
-  top: 25px;
-  right: 80px;
+  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.carrito {
-  position: absolute;
-  top: -10px;
-  right: 30px;
-}
+/* .carrito {
+
+} */
 li {
-  display: inline-block;
   height: 64px;
   list-style: none;
-  padding: 0 30px;
 }
 
 .head-wrapper-logoimg {
   width: auto;
   height: auto;
-  position: relative;
-  left: 40px;
-  top: 25px;
 }
 
 /* imagen principal*/
 .imagen-principal-wrapper {
-  width: 100%;
+  width: 100vw;
   height: 659px;
-  position: relative;
+
 }
 .imagen-principal-wrapper button {
   width: 278px;
   height: 55px;
-  position: absolute;
-  left: 581px;
-  top: 450px;
   border: 3px solid #ffffff;
   font-family: "Roboto";
   font-style: normal;
@@ -78,9 +81,7 @@ li {
   cursor: pointer;
 }
 .imagen-principal-wrapper h3 {
-  position: absolute;
-  left: 64px;
-  top: 300px;
+
   color: #ffffff;
   font-size: 40px;
 }
@@ -90,45 +91,37 @@ li {
 }
 /* productos populares */
 
-.prod-popular {
-  position: absolute;
-  left: 39%;
-}
+/* .prod-popular {} */
 .prod-popular-wrapper {
   width: 100%;
-  position: relative;
+
   min-height: 700px;
-  top: 150px;
+
 }
 
 .prod-popular-wrapper-pant {
-  display: inline-block;
   width: 200px;
-  position: absolute;
-  left: 106px;
+
 }
 .prod-popular-wrapper-remera {
-  display: inline-block;
+ 
   width: 200px;
-  position: absolute;
-  left: 423px;
+
 }
 .prod-popular-wrapper-campera {
-  display: inline-block;
+
   width: 200px;
-  position: absolute;
-  left: 740px;
+
 }
 .prod-popular-wrapper-buzo {
-  display: inline-block;
+
   width: 200px;
-  position: absolute;
-  left: 1056px;
+
 }
-.alinear-texto {
-  left: 80px;
-  position: absolute;
-}
+/* .alinear-texto {
+
+
+} */
 .prod-popular-wrapper-btn {
   width: 300px;
   height: 60px;
@@ -141,9 +134,7 @@ li {
   background-color: transparent;
   color: black;
   cursor: pointer;
-  position: absolute;
-  top: 400px;
-  left: 42%;
+
 }
 /* oferta verano*/
 
@@ -151,21 +142,17 @@ li {
   background-color: #121212;
   width: 100%;
   height: 670px;
-  position: relative;
+
 }
 .oferta-verano-img {
   width: 1274px;
   height: 552px;
-  left: 34px;
-  top: 70px;
-  position: absolute;
+
 }
 .oferta-verano-btn {
   width: 278px;
   height: 55px;
-  position: absolute;
-  left: 800px;
-  top: 500px;
+
   border: 3px solid #ffffff;
   font-family: "Roboto";
   font-style: normal;
@@ -186,66 +173,48 @@ li {
   width: 100%;
   height: 150px;
   background-color: #121212;
-  position: relative;
+
   font-size: 14px;
   text-transform: uppercase;
-  top: 200px;
+
 }
-.footer-wrapper-pol {
-  position: absolute;
-  left: 100px;
-  top: 50px;
-}
-.footer-wrapper-for {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-}
-.footer-wrapper-ayuda {
-  position: absolute;
-  left: 300px;
-  top: 100px;
-}
-.footer-wrapper-tyc {
-  position: absolute;
-  left: 300px;
-  top: 50px;
-}
+/* .footer-wrapper-pol {
+
+} */
+/* .footer-wrapper-for {
+
+} */
+/* .footer-wrapper-ayuda {
+
+} */
+/* .footer-wrapper-tyc {
+
+} */
 .footer-wrapper img {
   width: 20px;
   height: 20px;
 }
-.insta {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-.twitter {
-  position: absolute;
-  right: 320px;
-  top: 100px;
-}
-.facebook {
-  position: absolute;
-  right: 150px;
-  top: 50px;
-}
-.whatsapp {
-  position: absolute;
-  right: 150px;
-  top: 100px;
-}
+/* .insta {
+
+} */
+/* .twitter {
+
+} */
+/* .facebook {
+
+} */
+/* .whatsapp {
+
+} */
 /* quienes somos */
 .about-us-wrapper {
   width: 100%;
-  position: relative;
+  
   height: 80vh;
 }
-.about-us-wrapper h1 {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-}
+/* .about-us-wrapper h1 {
+
+} */
 .about-us-wrapper p {
   position: absolute;
   top: 150px;
