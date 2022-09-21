@@ -56,7 +56,8 @@ li {
 /* imagen principal*/
 .imagen-principal-wrapper {
   width: 100%;
-  height: 659px;
+  /* height: 659px; */
+  position: relative;
 }
 .imagen-principal-wrapper button {
   width: 278px;
@@ -70,10 +71,23 @@ li {
   background-color: transparent;
   color: #ffffff;
   cursor: pointer;
+  position: absolute;
+  left: 40%;
+  top: 80%;
 }
-.imagen-principal-wrapper h3 {
+.imagen-principal-wrapper-txt {
   color: #ffffff;
   font-size: 40px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+.imagen-principal-wrapper-txt-two{
+  color: #ffffff;
+  font-size: 40px;
+  position: absolute;
+  left: 5%;
+  top: 60%;
 }
 
 .imagen-principal-wrapper img {
@@ -81,11 +95,18 @@ li {
 }
 /* productos populares */
 
-/* .prod-popular {} */
+.prod-popular {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
 .prod-popular-wrapper {
-  width: 100%;
-
-  min-height: 700px;
+  width: 90%;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  padding: 10vh 4vw; 
 }
 
 .prod-popular-wrapper-pant {
@@ -100,10 +121,14 @@ li {
 .prod-popular-wrapper-buzo {
   width: 200px;
 }
-/* .alinear-texto {
-
-
-} */
+.alinear-texto {
+  padding-left: 3vw;
+}
+.prod-popular-wrapper-btn-w {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
 .prod-popular-wrapper-btn {
   width: 300px;
   height: 60px;
@@ -116,6 +141,7 @@ li {
   background-color: transparent;
   color: black;
   cursor: pointer;
+  /* justify-content: center; */
 }
 /* oferta verano*/
 
@@ -123,6 +149,11 @@ li {
   background-color: #121212;
   width: 100%;
   height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5vh;
 }
 .oferta-verano-img {
   width: 1274px;
@@ -131,7 +162,6 @@ li {
 .oferta-verano-btn {
   width: 278px;
   height: 55px;
-
   border: 3px solid #ffffff;
   font-family: "Roboto";
   font-style: normal;
@@ -141,49 +171,61 @@ li {
   background-color: transparent;
   color: #ffffff;
   cursor: pointer;
+  position: absolute;
+  top: 80vh;
 }
 /*footer*/
-.footer-wrapper a {
+.footer-wrapper a{
   text-decoration: none;
   color: #ffffff;
 }
 
 .footer-wrapper {
-  width: 100%;
-  height: 150px;
+  /* width: 100%; */
+  height: 100px;
   background-color: #121212;
-
   font-size: 14px;
   text-transform: uppercase;
+  display: grid;
+  grid-template-areas: 
+  " area1 area2 area5 area6"
+  "area3 area4 area7 area8";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 10vw;
+  padding-top: 3vw;
+  column-gap: 5vw;
+  row-gap: 5vh;
 }
-/* .footer-wrapper-pol {
 
-} */
-/* .footer-wrapper-for {
-
-} */
-/* .footer-wrapper-ayuda {
-
-} */
-/* .footer-wrapper-tyc {
-
-} */
 .footer-wrapper img {
   width: 20px;
   height: 20px;
 }
-/* .insta {
-
-} */
-/* .twitter {
-
-} */
-/* .facebook {
-
-} */
-/* .whatsapp {
-
-} */
+.footer-wrapper-pol{
+  grid-area: area1;
+}
+.footer-wrapper-for{
+  grid-area: area2;
+}
+.footer-wrapper-ayuda{
+  grid-area: area3;
+}
+.footer-wrapper-tyc{
+  grid-area: area4;
+}
+.twitter{
+  grid-area: area5;
+}
+.insta{
+  grid-area: area6;
+}
+.facebook{
+  grid-area: area7;
+}
+.whatsapp{
+  grid-area: area8;
+}
 /* quienes somos */
 .about-us-wrapper {
   width: 100%;
