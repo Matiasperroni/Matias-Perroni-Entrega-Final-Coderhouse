@@ -226,6 +226,14 @@ li {
 .whatsapp{
   grid-area: area8;
 }
+/* este codigo de abajo es para acomodar el texto junto con los logos de cada uno */
+.twitter, .insta, .facebook, .whatsapp {
+  display: flex;
+  align-items: center;
+}
+.twitter a , .insta a,  .facebook a,  .whatsapp a {
+  padding-left: 15px;
+}
 /* quienes somos */
 .about-us-wrapper {
   width: 100%;
