@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,7 +42,6 @@
     />
   </head>
   <body>
-    <!-- inicio del encabezado -->
     <header>
       <nav>
         <div class="head-wrapper">
@@ -137,65 +136,63 @@
         </div>
       </nav>
     </header>
-    <!-- fin del header -->
-    <!-- comienza primera seccion -->
-    <section class="imagen-principal-wrapper">
-      <img src="./img/imagen1.png" alt="imagen de fondo" />
-      <h3 class="imagen-principal-wrapper-txt">Nueva colección</h3>
-      <h3 class="imagen-principal-wrapper-txt-two">Verano 2022</h3>
-      <button>Mostrar más</button>
-    </section>
-    <!-- fin de la seccion -->
-    <!-- inicio main -->
+    <!-- carousel de imagenes -->
     <main>
-      <h1 class="prod-popular">PRODUCTOS POPULARES</h1>
-      <div class="prod-popular-wrapper">
-        <div class="prod-popular-wrapper-pant">
-          <a href="">
-            <img src="./img/pantalon.png" alt="imagen de pantalon"
-          /></a>
-          <div class="alinear-texto">
-            <h4>Pantalón gris</h4>
-            <p>10.000$</p>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="./img/carousel-img-cuatro.png"
+              class="d-block"
+              alt="imagen de carousel"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./img/carousel-img-tres.png"
+              class="d-block"
+              alt="imagen de carousel"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./img/carousel-img.png"
+              class="d-block"
+              alt="imagen de carousel"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="./img/carousel-img-dos.png"
+              class="d-block"
+              alt="imagen de carousel"
+            />
           </div>
         </div>
-        <div class="prod-popular-wrapper-buzo">
-          <a href=""> <img src="./img/buzo.png" alt="imagen de buzo" /></a>
-          <div class="alinear-texto">
-            <h4>Buzo blanco</h4>
-            <p>10.0000$</p>
-          </div>
-        </div>
-        <div class="prod-popular-wrapper-remera">
-          <a href=""><img src="./img/remera.png" alt="imagen de remera" /></a>
-          <div class="alinear-texto">
-            <h4>Remera blanca</h4>
-            <p>10.000$</p>
-          </div>
-        </div>
-        <div class="prod-popular-wrapper-campera">
-          <a href="">
-            <img src="./img/campera.png" alt="imagen de campera"
-          /></a>
-          <div class="alinear-texto">
-            <h4>Campera negra</h4>
-            <p>10.000$</p>
-          </div>
-        </div>
-      </div>
-      <div class="prod-popular-wrapper-btn-w">
-        <button class="prod-popular-wrapper-btn">Mostrar más</button>
-      </div>
-      <div class="oferta-verano">
-        <img
-          class="oferta-verano-img"
-          src="./img/ofertaverano.png"
-          alt="ofertas de verano"
-        />
-        <button class="oferta-verano-btn">Comprar aqui</button>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
-    <!-- fin main -->
     <!-- inicio footer -->
     <footer>
       <ul class="footer-wrapper">
