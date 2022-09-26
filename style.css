@@ -254,7 +254,7 @@ li {
 }
 .oferta-verano-img {
   width: 90%;
-  height: 85vh;
+  height: auto;
 }
 .oferta-verano-btn {
   width: 278px;
@@ -369,6 +369,7 @@ li {
 }
 .contenedor-productos-cartas {
   margin-top: 10%;
+  width: 100%;
 }
 .accordion-body input {
   transform: translateY(32px);
@@ -378,23 +379,14 @@ li {
 }
 /* quienes somos */
 .about-us-wrapper {
-  width: 100%;
-
-  height: 80vh;
-}
-/* .about-us-wrapper h1 {
-
-} */
-.about-us-wrapper p {
-  position: absolute;
-  top: 150px;
-  left: 100px;
-  width: 30%;
+  display: flex;
+  margin: 5vh 0;
+  padding: 0 5vw;
 }
 .about-us-wrapper img {
-  position: absolute;
-  top: 100px;
-  right: 100px;
+  width: 800px;
+  height: 500px;
+  padding-left: 5vw;
 }
 /* contacto */
 .contacto-wrapper {
@@ -453,51 +445,4 @@ h4 {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-}
-
-/*hombre y mujer*/
-.categorias-wrapper {
-  position: relative;
-  width: 100%;
-  height: 160vh;
-}
-.categorias-wrapper a {
-  text-decoration: none;
-  color: #121212;
-  text-align: center;
-  font-size: 24px;
-}
-.categorias-wrapper img {
-  width: 300px;
-  height: 400px;
-}
-.categorias-wrapper-pantalon {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-}
-.categorias-wrapper-remera {
-  position: absolute;
-  top: 100px;
-  left: 550px;
-}
-.categorias-wrapper-buzo {
-  position: absolute;
-  top: 100px;
-  left: 1000px;
-}
-.categorias-wrapper-campera {
-  position: absolute;
-  top: 650px;
-  left: 100px;
-}
-.categorias-wrapper-calzado {
-  position: absolute;
-  top: 650px;
-  left: 550px;
-}
-.categorias-wrapper-accesorio {
-  position: absolute;
-  top: 650px;
-  left: 1000px;
 }
