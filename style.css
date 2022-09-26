@@ -271,8 +271,6 @@ li {
   position: absolute;
   top: 80vh;
 }
-/* carousel */
-
 .footer-wrapper {
   /* width: 100%; */
   height: 150px;
@@ -340,12 +338,44 @@ li {
 /* carousel */
 .carousel-item img {
   height: 50vh;
-  width: 100vw;
+  width: 100%;
 }
 #carouselExampleInterval {
-  width: 100vw;
+  width: 100%;
 }
-
+.titulo-p {
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* paginas de productos hombres y mujeres */
+.accordion-body {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 90%;
+  position: relative;
+}
+.filtrar-por {
+  text-align: center;
+  font-weight: bold;
+}
+.accordion {
+  width: 90%;
+}
+.contenedor-cartas-y-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-productos-cartas {
+  margin-top: 10%;
+}
+.accordion-body input {
+  transform: translateY(32px);
+}
+.accordion-body label {
+  margin: 15px 0;
+}
 /* quienes somos */
 .about-us-wrapper {
   width: 100%;
@@ -368,78 +398,61 @@ li {
 }
 /* contacto */
 .contacto-wrapper {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
+  padding-left: 5%;
+  margin: 20px 0;
 }
-.contacto-wrapper-one h1 {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  width: 500px;
+.con-form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
-.contacto-wrapper-input-name {
-  position: absolute;
-  left: 100px;
-  top: 150px;
+#contacto-wrapper-input-name {
+  width: 400px;
+  margin: 10px 0;
 }
-.contacto-wrapper-input-mail {
-  position: absolute;
-  left: 100px;
-  top: 200px;
+#contacto-wrapper-input-mail {
+  width: 400px;
+  margin: 10px 0;
+  justify-content: flex-end;
 }
+
 .contacto-wrapper-input-msj {
-  position: absolute;
-  left: 100px;
-  top: 250px;
   width: 400px;
   height: 250px;
+  margin-top: 10px;
 }
 .contacto-wrapper-input-submit {
-  position: absolute;
-  left: 413px;
-  top: 520px;
+  align-self: flex-end;
   color: #ffffff;
   background-color: #121212;
   border-radius: 2px;
   width: 90px;
   height: 37px;
+  margin-top: 10px;
 }
 .contacto-wrapper-two {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.contacto-wrapper-two h1 {
-  position: absolute;
-  top: 100px;
-  right: 605px;
+.contacto-wrapper-two h3,
+h4 {
+  font-weight: bold;
 }
 .contacto-wrapper-two-mapa {
-  position: absolute;
-  top: 150px;
-  right: 100px;
+  width: 600px;
   height: 400px;
 }
-.contacto-wrapper-two h3 {
-  position: absolute;
-  top: 565px;
-  right: 650px;
-}
-.contacto-wrapper-two h4 {
-  position: absolute;
-  top: 595px;
-  right: 540px;
+.tel-wrapper {
+  display: flex;
 }
 .telefono-icon {
   width: 20px;
   height: 20px;
-  position: absolute;
-  top: 565px;
-  right: 200px;
-}
-.contacto-wrapper-two p {
-  position: absolute;
-  top: 570px;
-  right: 100px;
+  margin-right: 10px;
 }
 
 /*hombre y mujer*/
