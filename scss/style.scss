@@ -1,0 +1,610 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./pages/index";
+// Then add additional custom code here
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: none;
+  }
+  li {
+    list-style: none;
+  }
+  /* header */
+  .head-wrapper {
+    width: 100%;
+    height: 25vh;
+    background-color: #121212;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  .head-wrapper-a-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+  /* dropdowns */
+  .dropdown-contenedor {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .btn {
+    color: #ffffff !important;
+    background-color: #121212 !important;
+    border: 0 !important;
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+  .dropdown-menu {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+  }
+  .dropdown-item {
+    transition: 0.2s linear !important;
+  }
+  .head-wrapper-ul-num-two {
+    width: 85%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .head-wrapper-ul-num-two li {
+    margin: 0 5%;
+    height: 0px;
+  }
+  .carrito {
+    align-items: end;
+    height: 15px;
+  }
+  .head-wrapper-logoimg {
+    width: auto;
+    height: auto;
+  }
+  /* imagen principal*/
+  .imagen-principal-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .imagen-principal-wrapper button {
+    width: 100px;
+    height: 25px;
+    border: 1px solid #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 75%;
+  }
+  .imagen-principal-wrapper-txt {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+  }
+  .imagen-principal-wrapper-txt-two {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    top: 55%;
+  }
+  
+  .imagen-principal-wrapper img {
+    width: 100%;
+  }
+  
+  /* productos populares */
+  
+  .prod-popular {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 24px;
+  }
+  /* estilo de las cards */
+  .carta-contenedor-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 75vh;
+    flex-wrap: wrap;
+  }
+  .carta-contenedor {
+    position: relative;
+    margin: 2%;
+    width: 250px;
+    padding: 20px;
+  }
+  .carta-contenedor .carta {
+    width: 100%;
+  }
+  .carta-contenedor .carta .imgBox {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+  }
+  .carta-contenedor .carta .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+  }
+  .carta-contenedor .carta:hover .imgBox img {
+    transform: scale(1.5);
+  }
+  .carta-contenedor .carta .contenido {
+    padding: 10px 0;
+  }
+  .carta-contenedor .carta .contenido .nombre-producto h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  .carta-contenedor .carta .contenido .precio-producto h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+  }
+  .carta-action {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+  }
+  .carta-action li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateX(60px);
+  }
+  .carta-action li:nth-child(2) {
+    transition-delay: 0.15s;
+  }
+  .carta-action li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .carta-contenedor .carta:hover .carta-action li {
+    transform: translateX(0);
+  }
+  .carta-action li span {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-20px);
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: #ffffff;
+    border-radius: 4px;
+    pointer-events: none;
+    padding: 4px 6px;
+    color: #121212;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .carta-action li:hover span {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+  .carta-action li:hover {
+    background-color: red;
+    color: #ffffff;
+  }
+  
+  .prod-popular-wrapper-btn-w {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  .prod-popular-wrapper-btn {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+  }
+  /* oferta verano*/
+  .oferta-verano {
+    background-color: #121212;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5vh;
+  }
+  .oferta-verano-img {
+    width: 90%;
+    height: auto;
+  }
+  .oferta-verano-btn {
+    width: 150px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 19vh;
+  }
+  .footer-wrapper {
+    height: 130px;
+    background-color: #121212;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-areas:
+      " area1 area2 area5 area6"
+      "area3 area4 area7 area8";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 5vw;
+    row-gap: 5vh;
+    padding-left: 5px;
+  }
+  .footer-wrapper img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-wrapper-pol {
+    grid-area: area1;
+  }
+  .footer-wrapper-for {
+    grid-area: area2;
+  }
+  .footer-wrapper-ayuda {
+    grid-area: area3;
+  }
+  .footer-wrapper-tyc {
+    grid-area: area4;
+  }
+  .twitter {
+    grid-area: area5;
+  }
+  .insta {
+    grid-area: area6;
+  }
+  .facebook {
+    grid-area: area7;
+  }
+  .whatsapp {
+    grid-area: area8;
+  }
+  .twitter a,
+  .insta a,
+  .facebook a,
+  .whatsapp a {
+    padding-left: 5px;
+  }
+  .footer-wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  /* carousel */
+  .carousel-item img {
+    height: 25vh;
+    width: 100%;
+  }
+  #carouselExampleInterval {
+    width: 100%;
+  }
+  .titulo-p {
+    text-align: center;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  /* paginas de productos hombres y mujeres */
+  .accordion-body {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90%;
+    position: relative;
+  }
+  .filtrar-por {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .accordion {
+    width: 90%;
+    font-size: 14px;
+  }
+  .contenedor-cartas-y-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-productos-cartas {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .accordion-body input {
+    transform: translate(32px, 32px);
+  }
+  .accordion-body label {
+    margin: 15px 0;
+  }
+  /* quienes somos */
+  .about-us-wrapper {
+    display: flex;
+    margin: 5vh 0;
+    padding: 0 5vw;
+    flex-direction: column;
+    width: 90%;
+  }
+  .about-us-text {
+    width: 100%;
+    padding-left: 7vw;
+  }
+  .about-us-wrapper img {
+    width: 300px;
+    height: 180px;
+    padding-left: 7vw;
+  }
+  
+  /* contacto */
+  .contacto-wrapper {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    min-height: 80vh;
+    padding-left: 5%;
+    margin: 20px 0;
+  }
+  .con-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  #contacto-wrapper-input-name {
+    width: 90vw;
+    margin: 10px 0;
+  }
+  #contacto-wrapper-input-mail {
+    width: 90vw;
+    margin: 10px 0;
+    justify-content: flex-end;
+  }
+  
+  .contacto-wrapper-input-msj {
+    width: 90vw;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .contacto-wrapper-input-submit {
+    align-self: flex-end;
+    color: #ffffff;
+    background-color: #121212;
+    border-radius: 2px;
+    width: 75px;
+    height: 32px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .contacto-wrapper-two {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto-wrapper-two h3,
+  h4 {
+    font-weight: bold;
+  }
+  .contacto-wrapper-two-mapa {
+    width: 90vw;
+    height: 200px;
+  }
+  .tel-wrapper {
+    display: flex;
+  }
+  .telefono-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  @media (min-width: 992px) {
+    /* header */
+    .head-wrapper {
+      height: 64px;
+      font-size: 14px;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+    .head-wrapper-a-img {
+      justify-content: flex-start;
+      width: 20vw;
+      padding-top: 0;
+    }
+    /* dropdowns */
+    .dropdown-contenedor {
+      width: 20vw;
+      margin-top: 3px;
+    }
+    .dropdown button {
+      padding-right: 100px;
+    }
+    .head-wrapper-ul-num-two {
+      width: 40vw;
+    }
+  
+    /* imagen principal*/
+    .imagen-principal-wrapper button {
+      width: 278px;
+      height: 55px;
+      border: 3px solid #ffffff;
+      font-size: 20px;
+      line-height: 23px;
+      left: 40%;
+      top: 80%;
+    }
+    .imagen-principal-wrapper-txt {
+      color: #ffffff;
+      font-size: 40px;
+      top: 50%;
+    }
+    .imagen-principal-wrapper-txt-two {
+      font-size: 40px;
+      left: 5%;
+      top: 60%;
+    }
+  
+    /* productos populares */
+  
+    .prod-popular {
+      margin-left: 0;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    /* estilo de las cards */
+    .carta-contenedor-wrapper {
+      padding-right: 0;
+    }
+    .prod-popular-wrapper-btn-w {
+      padding-right: 0;
+    }
+    .prod-popular-wrapper-btn {
+      width: 300px;
+      height: 60px;
+      border: 3px solid black;
+      font-size: 20px;
+    }
+    /* oferta verano*/
+  
+    .oferta-verano {
+      height: 670px;
+    }
+    .oferta-verano-btn {
+      width: 278px;
+      height: 55px;
+      border: 3px solid #ffffff;
+      font-size: 25px;
+      top: 80vh;
+    }
+    .footer-wrapper {
+      height: 150px;
+      font-size: 14px;
+      padding-left: 10vw;
+      padding-top: 3vw;
+      column-gap: 5vw;
+    }
+  
+    .footer-wrapper img {
+      width: 20px;
+      height: 20px;
+    }
+    /* este codigo de abajo es para acomodar el texto junto con los logos de cada uno */
+    .twitter,
+    .insta,
+    .facebook,
+    .whatsapp {
+      display: flex;
+      align-items: center;
+    }
+    .twitter a,
+    .insta a,
+    .facebook a,
+    .whatsapp a {
+      padding-left: 15px;
+    }
+    /* carousel */
+    .carousel-item img {
+      height: 50vh;
+    }
+    /* paginas de productos hombres y mujeres */
+    .filtrar-por {
+      font-size: 40px;
+    }
+    .accordion {
+      font-weight: bold;
+    }
+    .accordion-body input {
+      transform: translate(-80px, 32px);
+    }
+    /* quienes somos */
+    .about-us-wrapper {
+      flex-direction: row;
+      width: 100%;
+    }
+    .about-us-text {
+      padding-left: 0;
+    }
+  
+    .about-us-wrapper img {
+      width: 800px;
+      height: 500px;
+      padding-left: 5vw;
+    }
+    /* contacto */
+    .contacto-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+    }
+    #contacto-wrapper-input-name {
+      width: 400px;
+    }
+    #contacto-wrapper-input-mail {
+      width: 400px;
+    }
+  
+    .contacto-wrapper-input-msj {
+      width: 400px;
+      height: 250px;
+    }
+    .contacto-wrapper-input-submit {
+      width: 90px;
+      height: 37px;
+    }
+    .contacto-wrapper-two-mapa {
+      width: 600px;
+      height: 400px;
+    }
+  }
