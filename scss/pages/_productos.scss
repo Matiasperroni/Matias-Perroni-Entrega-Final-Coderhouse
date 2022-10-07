@@ -1,0 +1,60 @@
+/* carousel */
+.carousel-item img {
+  height: 25vh;
+  width: 100%;
+}
+#carouselExampleInterval {
+  width: 100%;
+}
+.titulo-p {
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* paginas de productos hombres y mujeres */
+.filtrar-por {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.accordion {
+  width: 90%;
+  font-size: 14px;
+  &-body {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90%;
+    position: relative;
+    input {
+      transform: translate(32px, 32px);
+    }
+    label {
+      margin: 15px 0;
+    }
+  }
+}
+.contenedor-cartas-y-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-productos-cartas {
+  margin-top: 10%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  /* carousel */
+  .carousel-item img {
+    height: 50vh;
+  }
+  /* paginas de productos hombres y mujeres */
+  .filtrar-por {
+    font-size: 40px;
+  }
+  .accordion {
+    font-weight: bold;
+  }
+  .accordion-body input {
+    transform: translate(-80px, 32px);
+  }
+}
