@@ -8898,3 +8898,30 @@ li {
       padding-left: 5vw; }
   .about-us-text {
     padding-left: 0; } }
+
+.ofertas-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 5vh 0; }
+  .ofertas-wrapper-txt {
+    text-align: center;
+    font-weight: bold; }
+  .ofertas-wrapper-two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .ofertas-wrapper-three {
+    width: 100%; }
+    .ofertas-wrapper-three img {
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+      margin: 5vh 0;
+      margin-left: 1vw; }
+    .ofertas-wrapper-three-first h2, .ofertas-wrapper-three-first .h2,
+    .ofertas-wrapper-three-second h2,
+    .ofertas-wrapper-three-second .h2 {
+      text-align: center; }
+  .ofertas-wrapper img {
+    width: 90%; }

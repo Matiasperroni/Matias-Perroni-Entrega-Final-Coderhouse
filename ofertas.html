@@ -1,26 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="pagina de venta de ropa en buenos aires argentina"
-    />
-    <meta
-      name="keywords"
-      content="venta de ropa, nox clothing, ropa, remeras, buzos, zapatillas, gafas, relojes"
-    />
-    <title>Nox Clothing</title>
-    <!-- Font awesome link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <meta name="description" content="ofertas que ofrece nuestra pagina" />
+    <meta name="keywords" content="ofertas, verano, invierno, coleccion" />
+    <title>Ofertas</title>
     <!-- linkeo css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- fav icon -->
@@ -150,20 +136,70 @@
         </div>
       </nav>
     </header>
-    <!-- fin del header -->
-    <!-- comienza primera seccion -->
-    <section class="imagen-principal-wrapper">
-      <img src="./img/imagen1.png" alt="imagen de fondo" />
-      <h3 class="imagen-principal-wrapper-txt">Nueva colección</h3>
-      <h3 class="imagen-principal-wrapper-txt-two">Verano 2022</h3>
-      <button>Mostrar más</button>
-    </section>
-    <!-- fin de la seccion -->
-    <!-- inicio main -->
+    <!-- carousel de imagenes -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="./img/carousel-img-cuatro.png"
+            class="d-block"
+            alt="imagen de carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="./img/carousel-img-tres.png"
+            class="d-block"
+            alt="imagen de carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="./img/carousel-img.png"
+            class="d-block"
+            alt="imagen de carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="./img/carousel-img-dos.png"
+            class="d-block"
+            alt="imagen de carousel"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <main>
-      <h1 class="prod-popular">PRODUCTOS POPULARES</h1>
-
-      <div class="carta-contenedor-wrapper">
+      <div class="ofertas-wrapper">
+        <img
+          src="./img/ofertas.jpg"
+          alt="imagen de descuentos y metodos de pagos"
+        />
+      </div>
+      <h1 class="ofertas-wrapper-txt">No te pierdas nuestras ofertas!</h1>
+      <div class="ofertas-wrapper-two">
         <div class="carta-contenedor">
           <div class="carta-contenedor-carta">
             <div class="carta-contenedor-carta-imgBox">
@@ -223,34 +259,6 @@
         <div class="carta-contenedor">
           <div class="carta-contenedor-carta">
             <div class="carta-contenedor-carta-imgBox">
-              <img src="./img/remera.png" alt="imagen de remera" />
-              <ul class="carta-action">
-                <li>
-                  <i class="fa-solid fa-heart"></i>
-                  <span>Agregar a favoritos</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <span>Agregar al carrito</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-eye"></i> <span>Ver mas detalles</span>
-                </li>
-              </ul>
-            </div>
-            <div class="carta-contenedor-carta-contenido">
-              <div class="carta-contenedor-carta-nombre-producto">
-                <h3>Remera Blanca</h3>
-              </div>
-              <div class="carta-contenedor-carta-precio-producto">
-                <h2>10.000$</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carta-contenedor">
-          <div class="carta-contenedor-carta">
-            <div class="carta-contenedor-carta-imgBox">
               <img src="./img/pantalon.png" alt="imagen de pantalon" />
               <ul class="carta-action">
                 <li>
@@ -276,20 +284,54 @@
             </div>
           </div>
         </div>
+        <div class="carta-contenedor">
+          <div class="carta-contenedor-carta">
+            <div class="carta-contenedor-carta-imgBox">
+              <img src="./img/remera.png" alt="imagen de remera" />
+              <ul class="carta-action">
+                <li>
+                  <i class="fa-solid fa-heart"></i>
+                  <span>Agregar a favoritos</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span>Agregar al carrito</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-eye"></i> <span>Ver mas detalles</span>
+                </li>
+              </ul>
+            </div>
+            <div class="carta-contenedor-carta-contenido">
+              <div class="carta-contenedor-carta-nombre-producto">
+                <h3>Remera Blanca</h3>
+              </div>
+              <div class="carta-contenedor-carta-precio-producto">
+                <h2>10.000$</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="prod-popular-wrapper-btn-w">
-        <button class="prod-popular-wrapper-btn">Mostrar más</button>
-      </div>
-      <div class="oferta-verano">
-        <img
-          class="oferta-verano-img"
-          src="./img/ofertaverano.png"
-          alt="ofertas de verano"
-        />
-        <button class="oferta-verano-btn">Comprar aqui</button>
+      <div class="ofertas-wrapper-three row">
+        <div class="ofertas-wrapper-three-first col-sm-12 col-md-6">
+          <h2>Conocé nuestras ofertas de verano!</h2>
+          <a href=""
+            ><img
+              src="./img/oferta-one.png"
+              alt="oferta de la coleccion de verano"
+          /></a>
+        </div>
+        <div class="ofertas-wrapper-three-second col-sm-12 col-md-6">
+          <h2>Y también nuestra colección de invierno!</h2>
+          <a href=""
+            ><img
+              src="./img/oferta-two.png"
+              alt="oferta de la coleccion de invierno"
+          /></a>
+        </div>
       </div>
     </main>
-    <!-- fin main -->
     <!-- inicio footer -->
     <footer>
       <ul class="footer-wrapper">
