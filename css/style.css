@@ -8412,7 +8412,7 @@ li {
     height: 64px;
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: space-around; }
     .head-wrapper-ul-num-two li {
       margin: 0 5%;
       height: 0px; }
@@ -8615,7 +8615,7 @@ li {
     color: #ffffff;
     cursor: pointer;
     position: absolute;
-    top: 17vh; }
+    top: 20vh; }
 
 .footer-wrapper {
   height: 130px;
@@ -8662,6 +8662,12 @@ li {
 .whatsapp a {
   padding-left: 5px; }
 
+@media (min-width: 768px) {
+  .oferta-verano {
+    height: 40vh; }
+    .oferta-verano-btn {
+      top: 28vh; } }
+
 @media (min-width: 992px) {
   /* header */
   .head-wrapper {
@@ -8678,7 +8684,7 @@ li {
       width: 40vw; }
   /* dropdowns */
   .dropdown-contenedor {
-    width: 20vw;
+    width: auto;
     margin-top: 3px; }
   .dropdown button {
     padding-right: 100px; }
@@ -8748,7 +8754,6 @@ li {
 
 /* carousel */
 .carousel-item img {
-  height: 25vh;
   width: 100%; }
 
 #carouselExampleInterval {
@@ -8879,8 +8884,7 @@ li {
   flex-direction: column;
   width: 90%; }
   .about-us-wrapper img {
-    width: 300px;
-    height: 180px;
+    width: 80vw;
     padding-left: 7vw; }
 
 .about-us-text {
